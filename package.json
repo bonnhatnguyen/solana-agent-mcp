@@ -1,0 +1,40 @@
+{
+  "name": "solana-agent-mcp",
+  "version": "1.0.0",
+  "description": "Production Model Context Protocol (MCP) Server for Solana Blockchain — Wallet Ops, Jupiter v6 DEX Swaps, SPL Tokens, Jito Staking & Pre-flight Simulation",
+  "main": "build/index.js",
+  "bin": {
+    "solana-agent-mcp": "./build/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "node --test build/test.js"
+  },
+  "keywords": [
+    "solana",
+    "mcp",
+    "model-context-protocol",
+    "ai-agent",
+    "jupiter",
+    "defi",
+    "claude",
+    "cursor"
+  ],
+  "author": "Nguyễn Văn Đức Tài (bonnhatnguyen)",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "@solana/spl-token": "^0.4.13",
+    "@solana/web3.js": "^1.98.0",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "typescript": "^5.7.3"
+  }
+}
